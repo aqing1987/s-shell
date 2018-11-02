@@ -1,0 +1,8 @@
+#+TITLE: Nice Commands
+#+OPTIONS: ^:nil
+
+* File Process
+** process multiple files
+#+BEGIN_SRC sh
+  find . -name "a.conf" -exec sh -c 'for i; do vi $i; done' {} +
+#+END_SRC
